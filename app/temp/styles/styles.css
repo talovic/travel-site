@@ -460,6 +460,15 @@ img {
   height: auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a {
+  color: #d59541;
+}
+
 .large-hero {
   border-bottom: 10px solid #2f5572;
   position: relative;
@@ -551,18 +560,164 @@ img {
   }
 
 .wrapper {
+  overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1200px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
+
+
 }
 
+.wrapper--medium {
+    max-width: 976px;
+  }
+
+.wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.wrapper--b-margin {
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 530px) {
+
+.wrapper--b-margin {
+      margin-bottom:3.875rem
+  }
+  }
+
 .page-section {
-  padding: 4.5rem 0;
+
+  padding: 1.2rem 0;
 }
+
+@media (min-width: 800px) {
+
+.page-section {
+    padding: 4.5rem 0
+}
+  }
 
 .page-section--blue {
     background-color: #2f5572;
     color: #FFF;
+  }
+
+.headline {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: #2f5572;
+
+}
+
+@media (min-width: 530px) {
+
+.headline {
+    font-size: 2.875rem
+
+}
+  }
+
+.headline--centered {
+    text-align: center;
+  }
+
+.headline--orange {
+    color: #d59541;
+  }
+
+.headline--small {
+    font-size: 1.2rem;
+  }
+
+@media (min-width: 530px) {
+
+.headline--small {
+      font-size: 1.875rem
+  }
+  }
+
+.headline--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.headline--light {
+    font-weight: 100;
+  }
+
+.headline--b-margin-small {
+    margin-bottom: .5em;
+  }
+
+.headline--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+
+.headline--no-t-margin {
+    margin-top: 0;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.row--gutters {
+    margin-right: -65px;
+  }
+
+.row--gutters > div {
+    padding-right: 65px;
+  }
+
+.row__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 800px) {
+
+    .row__b-margin-until-medium {
+      margin-bottom: 0rem;
+    }
+
+    .row__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__medium-4--larger {
+      width: 37%;
+    }
+
+    .row__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__medium-8--smaller {
+      width: 63%;
+    }
+  }
+
+.generic-content-container p {
+    line-height: 1.65;
+    margin: 1.8rem 0;
+  }
+
+@media (min-width: 530px) {
+
+.generic-content-container p {
+      font-size: 1.125rem
+  }
+  }
+
+.generic-content-container p a{
+    font-weight: 700;
   }
