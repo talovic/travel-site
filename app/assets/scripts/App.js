@@ -1,14 +1,3 @@
-/* Testing webpack - gulp integration */
+import MobileMenu from './modules/MobileMenu';
 
-var $ = require('jquery');
-var Person = require('./modules/Person')
-
-alert("ABC 321");
-
-var john = new Person("John Doe", "blue");
-john.greet();
-
-var jane = new Person("Jane Smith", "green");
-jane.greet();
-
-$("h1").remove();
+var mobileMenu = new MobileMenu();
