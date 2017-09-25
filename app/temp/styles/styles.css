@@ -548,8 +548,6 @@ a {
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
-
-
 }
 
 .btn--orange {
@@ -1030,6 +1028,10 @@ Instead edit gulp/templates/sprite */
 
 .icon {
     background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
+    }
+
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-69f19c2e.png');
     }
 
 .icon--clear-view-escapes {
